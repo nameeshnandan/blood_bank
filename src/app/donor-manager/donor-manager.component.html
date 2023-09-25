@@ -1,0 +1,96 @@
+<!-- <div class="row">
+    <div class="col-12">
+        <img width="100%" src="https://i1.wp.com/www.helpingbrainz.org/wp-content/uploads/2015/09/BDTP.jpg" alt="">
+    </div>
+</div> -->
+<div class="container-fluid bg-light">
+<div class="container text-danger text-center  " style="text-align: justify;">
+    <div class="container-fluid bg-light">
+    <div class="row">
+        <!-- <img src="https://i.pinimg.com/564x/d2/f1/a4/d2f1a40bd746369894a6e950b3745743.jpg" alt=""> -->
+        <div class="col-8 top-div bg-light">
+            <h4 class="mt-5 first-line">The blood you donate gives someone another chance at life</h4>
+            <h2 class="second-line mt-4">GIVE THE GIFT OF LIFE</h2>
+            <H1 class="third-line mt-4">DONATE BLOOD</H1>
+            <p class="fourth-line mt-3">“If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.” “Donate! It is a bloody good job.” “Nobody can do everything, but everyone can do something.”</p>
+        </div>
+        <div class="col-4 top-div-right bg-light">
+            <img height="500px" src="https://www.pngmart.com/files/7/Blood-Donation-PNG-Pic.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    <div class="row middle">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 middle-inner text-center mt-5 p-5">
+                    <h2>BLOOD BANK & DONOR MANAGEMENT SYSTEM</h2>
+                    <h3 class="mt-5">Share your <a href=""> LOVE </a>as <a href="">BLOOD</a> </h3>
+                    <div class="button">
+
+                        <p class="mt-5">Be a part of us </p>
+                        <a routerLink="/donor/add" class="btn btn-primary add-btn text-light" >Add Donor <i class="fa fa-user-plus "></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+            <!-- <h1>{{heading}}</h1> -->
+            <!-- <p>{{allDonor|json}}</p> -->
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 search">
+                    <p class="text-dark">Search your needed DONOR here</p>
+                    <input  type="text" (keyup)="search($event)" class="form-control w-50  text-dark border border-dark " placeholder="Enter your needed blood group">
+                </div>
+            </div>  
+            <hr class="mt-5">
+        </div>
+            <!-- <hr><hr><hr><hr><hr><hr><hr><hr><hr> -->
+            <p class="text-dark text-center">Donors in our COMMUNITY</p>
+           
+
+            <div class="container">
+            <div class="row mt-5 ">
+                <div class="col-6 donor" *ngFor="let donor of allDonor | filter:searchKey:'blood' ">
+                    <div class="card ">
+                        <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-6 details text-start">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Name : <h6>{{donor.name}} </h6></li>
+                                    <li class="list-group-item">Mobile : <h6>{{donor.phone}} </h6></li>
+                                    <li class="list-group-item">District : <h6>{{donor.district}}</h6></li>
+                                
+                                </ul>
+                                <a routerLink="/donor/view/{{donor.id}}" class="btn btn-primary view-btn mt-3">More Details</a>
+                            </div>
+
+                            <div class="col-6 img">
+                                <img width="200px" height="200px" [src]="donor.photo" alt="">
+                            </div>
+
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 group">
+
+                        <h5 class="text-light mt-3 blood text-center">{{donor.blood}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>

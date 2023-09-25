@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: grey; */
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 19%;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    border: 0px solid white;
+    border-right: 2px solid white;
+    height: 70px;
+    /* padding: 10px; */
+    padding-right: 18px;
+    margin-right: 18px;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 1.5%;
+}

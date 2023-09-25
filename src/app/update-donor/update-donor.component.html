@@ -1,0 +1,90 @@
+<div class="container text-dark  text-center mb-5" style="text-align: justify;">
+    
+  <div class="row">
+    <div class="col-12">
+      <H1 class="third-line mt-4">DONATE BLOOD</H1>
+      <p class="fourth-line mt-3">“If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.” “Donate! It is a bloody good job.” “Nobody can do everything, but everyone can do something.”</p>
+
+    </div>
+  </div>
+  <hr>
+
+    <!-- <pre>{{Donor|json}}</pre> -->
+    <h1 class="mt-5 heading">Update Donor </h1>
+    <div class="row mt-5">
+        <!-- details -->
+        <div class="col-6">
+            <h4 class="head mb-3">Edit donor details here</h4>
+            <form class="border border-3 border-danger p-4 rounded-5">
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.id" name="donorId"  type="text" class="form-control"  placeholder="Id">
+                    <label for="floatingInput">ID : {{Donor.id}}</label>
+                  </div>
+                  
+                  <div class="form-floating mb-3">
+                    <input type="text" [(ngModel)]="Donor.name" name="donorName" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" [(ngModel)]="Donor.photo" name="donorPhoto" class="form-control"  placeholder="photo url">
+                    <label for="Photo url">Photo Url </label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.phone" name="donorPhone" type="number" class="form-control"  placeholder="phone">
+                    <label for="floatingInput">Mobile Number</label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.district" name="donorDistrict" type="text" class="form-control"  placeholder="District">
+                    <label for="floatingInput">District</label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.blood" name="donorBloood" type="text" class="form-control"  placeholder="Blood Group">
+                    <label for="floatingInput">Blood group</label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <select [(ngModel)]="Donor.genderId" name="donorId" class="form-control">
+                        <option  selected hidden disabled>Gender</option>
+                        <option [value]="gender.id" *ngFor="let gender of genders">{{gender.name}}</option>
+
+                    </select>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.age" name="donorAge" type="text" class="form-control"  placeholder="Age">
+                    <label for="floatingInput">Age</label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <input [(ngModel)]="Donor.weight" name="donorWeight" type="text" class="form-control"  placeholder="Weight">
+                    <label for="floatingInput">Weight in KG</label>
+                  </div>
+
+                  <div class="form-floating mb-3 ">
+                    <select  [(ngModel)]="Donor.timeId" name="timeId"  class="form-control">
+                        <option  selected hidden disabled>Available time</option>
+                        <option [value]="time.id" *ngFor="let time of times">{{time.name}}</option>
+
+                    </select>
+                  </div>
+
+                  <button routerLink=""  class="btn btn-danger mt-4 me-5">Go Back</button>
+                  <button (click)="updateDonor()" routerLink="" class="btn btn-success mt-4 ms-5">Update</button>
+            </form>
+        </div>
+
+
+        <!-- image -->
+        <div class="col-6 imgae">
+          <div class="img border border-3 border-danger rounded-5 p-4">
+
+            <img class="rounded-5" width="400px" height="400px" [src]="Donor.photo" alt="">
+          </div>
+        </div>
+    </div>
+
+</div>

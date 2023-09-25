@@ -1,0 +1,16 @@
+.footer{
+    background-image: url("https://www.servercool.com/wp-content/uploads/2019/09/footer-swish-red-1024x149.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: center;
+}
+.para{
+    margin-top: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}

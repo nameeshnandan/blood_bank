@@ -1,0 +1,107 @@
+<div class="container text-dark text-center bg- mb-5" style="text-align: justify;">
+    <!-- <div class="row">
+        <div class="col-12 top-div">
+            <h4>The blood you donate gives someone another chance at life</h4>
+            <h2>GIVE THE GIFT OF LIFE</h2>
+            <H1>DONATE BLOOD</H1>
+            <p>“If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.” “Donate! It is a bloody good job.” “Nobody can do everything, but everyone can do something.”</p>
+            <a routerLink="/contact/add" class="btn btn-warning" style="float: right;">Add Donor</a>
+        </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-12">
+        <H1 class="third-line mt-4">DONATE BLOOD</H1>
+        <p class="fourth-line mt-3">“If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.” “Donate! It is a bloody good job.” “Nobody can do everything, but everyone can do something.”</p>
+
+      </div>
+    </div>
+    <hr>
+
+    <h1 class="mt-5 heading">Add Donor </h1>
+    <div class="row mt-5">
+        <!-- details -->
+        <div class="col-6">
+            <h4 class="head">Add donor details here</h4>
+            <form class="border border-3 border-danger p-4 rounded-5">
+              <!-- <pre>{{donor|json}}</pre> -->
+                  <!-- id -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.id" name="DonorId" type="text" class="form-control"  placeholder="Id">
+                    <label for="floatingInput">ID</label>
+                  </div>
+                 
+                  <!-- name -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="donor.name" name="DonorName" type="text" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+
+                  <!-- Age -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.age" name="DonorAge" type="text" class="form-control"  placeholder="Age">
+                    <label for="floatingInput">Age</label>
+                  </div>
+
+                  <!-- weight -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.weight" name="DonorWeight" type="text" class="form-control"  placeholder="Weight">
+                    <label for="floatingInput">Weight in KG</label>
+                  </div>
+
+                  <!-- gender  -->
+                  <div class="form-floating mb-3 ">
+                    <select [(ngModel)]="donor.genderId" name="genderId" class="form-control">
+                        <option  selected hidden disabled>{{donor.genderId}}</option>
+                        <option [value]="gender.id" *ngFor="let gender of allGender">{{gender.name}}</option>
+                        
+                    </select>
+                  </div>
+
+                  <!-- blood group  -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.blood" name="DonorBlood" type="text" class="form-control"  placeholder="Blodd Group">
+                    <label for="floatingInput">Blood Group</label>
+                  </div>
+
+                  <!-- photo  -->
+                  <div class="form-floating mb-3">
+                    <input  [(ngModel)]="donor.photo" name="DonorPhoto" type="text" class="form-control"  placeholder="photo url">
+                    <label for="Photo url">Photo Url</label>
+                  </div>
+                  
+                  <!-- moblie number  -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.phone" name="DonorPhone" type="number" class="form-control"  placeholder="phone">
+                    <label for="floatingInput">Mobile Number</label>
+                  </div>
+
+                  <!-- district  -->
+                  <div class="form-floating mb-3 ">
+                    <input  [(ngModel)]="donor.district" name="DonorDistrict" type="text" class="form-control"  placeholder="District">
+                    <label for="floatingInput">District</label>
+                  </div>
+                  
+                  <!-- Available time                    -->
+                  <div class="form-floating mb-3 ">
+                    <select [(ngModel)]="donor.timeId" name="timeId" class="form-control">
+                        <option  selected hidden disabled>{{donor.timeId}}</option>
+                        <option [value]="time.id" *ngFor="let time of allTime">{{time.name}}</option>
+
+                    </select>
+                  </div>
+
+
+                  <button routerLink=""  class="btn btn-danger mt-4">Go Back</button>
+                  <button (click)="addDonor()" type="button" class="btn btn-success mt-4 ms-5">Add Donor</button>
+            </form>
+        </div>
+
+
+        <!-- image -->
+        <div class="col-6 imgae ">
+            <img class="border border-3 border-danger p-3 rounded-5" width="400px" height="400px" [src]="donor.photo" alt="">
+        </div>
+    </div>
+<hr>
+</div>

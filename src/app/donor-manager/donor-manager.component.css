@@ -1,0 +1,171 @@
+/* .top-div{
+    background-image: linear-gradient(90deg, rgba(205,0,5,255), rgba(151,1,27,255));
+}
+.top-div-right{
+    background-image: linear-gradient(-90deg,rgba(205,0,5,255), rgba(151,1,27,255));
+
+} */
+
+.first-line{
+    font-size: 25px;
+    color: rgb(200, 29, 29);
+    font-family: monospace;
+}
+.second-line{
+    font-family: monospace;
+    color: rgb(212, 1, 1);
+    font-weight: 700;
+    text-decoration: solid;
+}
+.third-line{
+    font-size: 70px;
+    color: rgba(205,0,5,255);
+    text-shadow: 2px 1px 2px grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fourth-line{
+    font-size: 20px;
+    color: rgba(205,0,5,255);
+
+}
+.add-btn{
+    transition: transform .1s;
+
+}
+.add-btn:hover{
+    -ms-transform: scale(.5); /* IE 9 */
+    -webkit-transform: scale(.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.group{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    transition: transform .5s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.img img:hover {
+    -ms-transform: scale(.2); /* IE 9 */
+    -webkit-transform: scale(.2); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
+  .view-btn{
+    transition: transform .5s;
+  }
+  .view-btn:hover{
+    -ms-transform: scale(.2); /* IE 9 */
+    -webkit-transform: scale(.2); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+.blood{
+    height: 30px;
+    width: 20%;
+    border: 1px solid white;
+    background-color: rgb(218, 10, 10);
+    border-radius: 50px;
+}
+.view-btn{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle{
+    height: 500px;
+    background-image: url('https://businessjournaldaily.com/wp-content/uploads/2020/03/blood-donate.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.middle h2{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.middle h3{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.middle a{
+    text-decoration: none;
+    text-decoration: solid;
+    font-weight: 700;
+    color: rgb(177, 16, 16);
+}
+.button{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.button p{
+    margin-right: 50px;
+    text-shadow: 2px 3px 2px black;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search p{
+    font-size: 28px;
+}
+
+.group{
+    margin-bottom: 30px;
+    /* border: 3px solid black; */
+}
+
+.card-body{
+
+    border: 3px solid rgb(205, 13, 13);
+    border-radius: 10px;
+}
+.card-body:hover{
+    /* border: 5px solid red; */
+    border-color: rgb(120, 21, 21);
+    /* background-color: rgba(0, 106, 255, 0.11); */
+    /* box-shadow: 2px 2px 2px grey; */
+}
+
+.details ul li{
+    display: flex;
+    border: none;
+    color: grey;
+    font-size: 20px;
+}
+.details h6{
+    font-size: 20px;
+    margin-top: 4.5px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+hr{
+    color: black;
+    height: 10px;
+}
+
+p{
+    font-size: 28px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
